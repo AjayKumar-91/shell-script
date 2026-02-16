@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NGINX Server Status</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background: #ffffff;
+            color: #333;
+            padding: 40px;
+            width: 420px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #009639;
+            margin-bottom: 10px;
+        }
+
+        .status {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 8px 16px;
+            background: #009639;
+            color: #fff;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 10px 0;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>NGINX is Running</h1>
+        <div class="status">STATUS : ACTIVE</div>
+
+        <p>This web page is successfully served by</p>
+        <p><strong>NGINX Web Server</strong></p>
+
+        <p>Server setup completed using Linux & Shell Script</p>
+
+        <footer>
+            © 2026 | Powered by NGINX
+        </footer>
+    </div>
+</body>
+</html>
+
