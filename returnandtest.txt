@@ -1,0 +1,39 @@
+┌──(gaurav㉿learning-ocean)-[~]
+└─$ echo "Learning-Ocean"
+Learning-Ocean
+
+┌──(gaurav㉿learning-ocean)-[~]
+└─$ echo "echo: Command Not Found"
+echo: Command Not Found
+
+┌──(gaurav㉿learning-ocean)-[~]
+└─$ echo $?
+0 # getting exit status is zero means last command executed successfully.
+
+┌──(gaurav㉿learning-ocean)-[~]
+└─$ asdasd
+asdasd: command not found
+
+┌──(gaurav㉿learning-ocean)-[~]
+└─$ echo $?
+127 # getting exit status as non zero means last command not exexuted successfully.
+
+
+┌──(gaurav㉿learning-ocean)-[~]
+└─$ a=5 # assign a value(5) to variable a.
+
+┌──(gaurav㉿learning-ocean)-[~]
+└─$ test $a -eq 5 # checking that a = 5 or not
+
+┌──(gaurav㉿learning-ocean)-[~]
+└─$ echo $?
+0 # in last command our expression is true so its return a successfull status means zero.
+
+# now let's try with a==4
+┌──(gaurav㉿learning-ocean)-[~]
+└─$ test $a -eq 4
+
+# above express if not true so return non zero (1) exit status
+┌──(gaurav㉿learning-ocean)-[~]
+└─$ echo $?
+1
